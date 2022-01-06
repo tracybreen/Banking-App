@@ -10,15 +10,16 @@ import Deposit from "./Components/Deposit"
 import NavBar from "./Components/NavBar"
 import Withdraw from "./Components/Withdraw"
 import Balance from "./Components/Balance"
-import {BrowserRouter, Routes, Route, Link, Outlet} from "react-router-dom"
+import {BrowserRouter as Router, Routes, Route, Switch, Link, Outlet} from "react-router-dom"
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <NavBar/>
         {/* <UserContext.Provider value={{users:[{name:'tracy', email:'fake@me.com', password:'secret', balance: 100}]}}> */}
         <Routes>
-        <Route path="home" exact element={<Home />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="home" element={<Home />} />
         <Route path="createaccount" element={<CreateAccount />} />
         <Route path="login" element={<Login />} />
         <Route path="deposit" element={<Deposit />} />
@@ -27,7 +28,7 @@ function App() {
         <Route path="alldata" element={<AllData />} />
         </Routes>
       {/* </UserContext.Provider> */}
-    </BrowserRouter>
+    </Router>
   );
 }
 
