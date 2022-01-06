@@ -9,7 +9,7 @@ function Login() {
       header="Login"
       title="Your Account Login:"
       text="ID: _______ Password: _______"
-      body={(<img src="bank.png" className="img-fluid" alt="Responsive Image"/>)}
+      body={(<img src="../bank.png" className="img-fluid" alt="Responsive Image"/>)}
      />
   );
 }

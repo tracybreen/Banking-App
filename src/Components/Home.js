@@ -9,7 +9,7 @@ function Home() {
       header="BadBank Landing Page"
       title="Welcome to the Bank"
       text="Banky bank bank stuff."
-      body={(<img src="bank.png" className="img-fluid" alt="Responsive Image"/>)}
+      body={(<img src="../bank.png" className="img-fluid" alt="Responsive Image"/>)}
      />
   );
 }

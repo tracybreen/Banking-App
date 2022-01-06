@@ -10,50 +10,64 @@ import Deposit from "./Components/Deposit"
 import NavBar from "./Components/NavBar"
 import Withdraw from "./Components/Withdraw"
 import Balance from "./Components/Balance"
+import {BrowserRouter, Routes, Route, Link, Outlet} from "react-router-dom"
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <NavBar/>
-      <UserContext.Provider value={{users:[{name:'tracy', email:'fake@me.com', password:'secret', balance: 100}]}}>
-        <Route path="/" exact component={Home} />
-        <Route path="/createaccount/" component={CreateAccount} />
-        <Route path="/login/" component={Login} />
-        <Route path="/deposit/" component={Deposit} />
-        <Route path="/withdraw/" component={Withdraw} />
-        <Route path="/balance/" component={Balance} />
-        <Route path="/alldata/" component={AllData} />
-      </UserContext.Provider>
-    </HashRouter>
+        {/* <UserContext.Provider value={{users:[{name:'tracy', email:'fake@me.com', password:'secret', balance: 100}]}}> */}
+        <Routes>
+        <Route path="home" exact element={<Home />} />
+        <Route path="createaccount" element={<CreateAccount />} />
+        <Route path="login" element={<Login />} />
+        <Route path="deposit" element={<Deposit />} />
+        <Route path="withdraw" element={<Withdraw />} />
+        <Route path="balance" element={<Balance />} />
+        <Route path="alldata" element={<AllData />} />
+        </Routes>
+      {/* </UserContext.Provider> */}
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+// function App() {
+//   return (
+//     <>
+//       <NavBar/>
+//       <Login />
+//       </>
+//   );
+// }
+
+// export default App;
 
 
 
 // import logo from './logo.svg';
 // import './App.css';
 
-// // function App() {
-// //   return (
-// //     <div className="App">
-// //       <header className="App-header">
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
         
-// //         <p>
-// //           Edit <code>src/App.js</code> and save to reload.
-// //         </p>
-// //         <a
-// //           className="App-link"
-// //           href="https://reactjs.org"
-// //           target="_blank"
-// //           rel="noopener noreferrer"
-// //         >
-// //           This will be a Bad Bank
-// //         </a>
-// //       </header>
-// //     </div>
-// //   );
-// // }
+//         <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           This will be a Bad Bank
+//         </a>
+//       </header>
+//     </div>
+//   );
+// }
 
-// // export default App;
+// export default App;

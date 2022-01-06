@@ -9,7 +9,7 @@ function Deposit(){
       header="Deposit"
       title="Enter deposit amount:"
       text="$0.00"
-      body={(<img src="bank.png" className="img-fluid" alt="Responsive Image"/>)}
+      body={(<img src="../bank.png" className="img-fluid" alt="Responsive Image"/>)}
      />
   );
 }

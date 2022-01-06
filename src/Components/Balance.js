@@ -9,7 +9,7 @@ function Balance(){
       header="Balance"
       title="Your current balance is:"
       text="$100.00"
-      body={(<img src="bank.png" className="img-fluid" alt="Responsive Image"/>)}
+      body={(<img src="../bank.png" className="img-fluid" alt="Responsive Image"/>)}
      />
   );
 }

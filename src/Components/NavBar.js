@@ -5,7 +5,7 @@ function NavBar() {
     <>
       <nav className='navbar navbar-expand-lg navbar-light bg-light'>
         <div className='container-fluid'>
-          <a className='navbar-brand' href='#'>
+          <a className='navbar-brand' href='/home/'>
             BadBank
           </a>
           <button
@@ -22,32 +22,32 @@ function NavBar() {
           <div className='collapse navbar-collapse' id='navbarNav'>
             <ul className='navbar-nav'>
               <li className='nav-item'>
-                <a className='nav-link' href='#/createaccount/'>
+                <a className='nav-link' href='/createaccount/'>
                   Create Account
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#/login/'>
+                <a className='nav-link' href='/login/'>
                   Login
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#/deposit/'>
+                <a className='nav-link' href='/deposit/'>
                   Deposit
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#/withdraw/'>
+                <a className='nav-link' href='/withdraw/'>
                   Withdraw
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#/balance/'>
+                <a className='nav-link' href='/balance/'>
                   Balance
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#/alldata/'>
+                <a className='nav-link' href='/alldata/'>
                   All Data
                 </a>
               </li>

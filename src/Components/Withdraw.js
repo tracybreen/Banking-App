@@ -9,7 +9,7 @@ function Withdraw(){
       header="Withdraw"
       title="Enter Withdrawal Amount:"
       text="$0.00"
-      body={(<img src="bank.png" className="img-fluid" alt="Responsive Image"/>)}
+      body={(<img src="../bank.png" className="img-fluid" alt="Responsive Image"/>)}
      />
   );
 }
