@@ -1,22 +1,22 @@
 import React from "react"
-import ReactBootstrap from "react-bootstrap"
-import axios from "axios"
+// import ReactBootstrap from "react-bootstrap"
+// import axios from "axios"
 import Home from "./Components/Home"
 import Login from "./Components/Login"
 import AllData from "./Components/AllData"
 import CreateAccount from "./Components/CreateAccount"
-//import Context from "./Components/Context"
+import { UserContext } from "./Components/Context"
 import Deposit from "./Components/Deposit"
 import NavBar from "./Components/NavBar"
 import Withdraw from "./Components/Withdraw"
 import Balance from "./Components/Balance"
-import {BrowserRouter as Router, Routes, Route, Switch, Link, Outlet} from "react-router-dom"
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
   return (
     <Router>
       <NavBar/>
-        {/* <UserContext.Provider value={{users:[{name:'tracy', email:'fake@me.com', password:'secret', balance: 100}]}}> */}
+        <UserContext.Provider value={{users:[{name:'tracy', email:'fake@me.com', password:'secret', balance: 100}]}}>
         <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="home" element={<Home />} />
@@ -27,7 +27,7 @@ function App() {
         <Route path="balance" element={<Balance />} />
         <Route path="alldata" element={<AllData />} />
         </Routes>
-      {/* </UserContext.Provider> */}
+      </UserContext.Provider>
     </Router>
   );
 }

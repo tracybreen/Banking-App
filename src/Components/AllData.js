@@ -1,8 +1,10 @@
 import React from "react"
-import Card from "./Context";
+import { Card } from "./Card"
+import { UserContext } from "./Context"
 
 function AllData() {
-  // const ctx = React.useContext(UserContext);
+  const ctx = React.useContext(UserContext);
+  console.log(ctx)
 
   return (
     <Card
@@ -12,7 +14,7 @@ function AllData() {
       title="Account Data:"
       text="test"
       // text={JSON.stringify(ctx)}
-      body={(<img src="../bank.png" className="img-fluid" alt="Responsive Image"/>)}
+      body={(<img src="../bank.png" className="img-fluid" alt="Responsive"/>)}
     />
   );
 }

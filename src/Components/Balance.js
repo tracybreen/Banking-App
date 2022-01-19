@@ -1,7 +1,12 @@
 import React from "react"
-import Card from "./Context";
+import { Card } from "./Card";
+import { UserContext } from "./Context"
+
 
 function Balance(){
+  const ctx = React.useContext(UserContext);
+  console.log(ctx);
+
   return (
     <Card
       bgcolor="primary"
@@ -9,7 +14,7 @@ function Balance(){
       header="Balance"
       title="Your current balance is:"
       text="$100.00"
-      body={(<img src="../bank.png" className="img-fluid" alt="Responsive Image"/>)}
+      body={(<img src="../bank.png" className="img-fluid" alt="Responsive"/>)}
      />
   );
 }

@@ -4,12 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.css"
+// import UserContext from "./Components/Context"
+//import { useInRouterContext } from 'react-router';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  // <React.StrictMode>
+    // <UserContext.Provider value={{users:[{name:'tracy', email:'fake@me.com', password:'secret', balance: 100}]}}>
+      <App />,
+    // {/* </UserContext.Provider>, */}
+// {/* </React.StrictMode> */}
+ document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

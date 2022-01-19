@@ -1,7 +1,10 @@
 import React from "react"
-import Card from "./Context";
+import { Card } from "./Card";
+import { UserContext } from "./Context"
 
 function Home() {
+  const ctx = React.useContext(UserContext);
+  console.log(ctx);
   return (
     <Card
       bgcolor="primary"
@@ -9,7 +12,7 @@ function Home() {
       header="BadBank Landing Page"
       title="Welcome to the Bank"
       text="Banky bank bank stuff."
-      body={(<img src="../bank.png" className="img-fluid" alt="Responsive Image"/>)}
+      body={(<img src="../bank.png" className="img-fluid" alt="Responsive"/>)}
      />
   );
 }

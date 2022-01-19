@@ -1,7 +1,11 @@
 import React from "react"
-import Card from "./Context";
+import { Card } from "./Card";
+import { UserContext } from "./Context"
 
 function Login() {
+  const ctx = React.useContext(UserContext);
+  console.log(ctx);
+
   return (
     <Card
       bgcolor="primary"
@@ -9,7 +13,7 @@ function Login() {
       header="Login"
       title="Your Account Login:"
       text="ID: _______ Password: _______"
-      body={(<img src="../bank.png" className="img-fluid" alt="Responsive Image"/>)}
+      body={(<img src="../bank.png" className="img-fluid" alt="Responsive"/>)}
      />
   );
 }
