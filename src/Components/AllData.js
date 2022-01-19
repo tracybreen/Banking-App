@@ -12,8 +12,7 @@ function AllData() {
       txtcolor="white"
       header="All Data"
       title="Account Data:"
-      text="test"
-      // text={JSON.stringify(ctx)}
+      text={JSON.stringify(ctx)}
       body={(<img src="../bank.png" className="img-fluid" alt="Responsive"/>)}
     />
   );
