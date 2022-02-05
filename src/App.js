@@ -10,13 +10,14 @@ import Deposit from "./Components/Deposit"
 import NavBar from "./Components/NavBar"
 import Withdraw from "./Components/Withdraw"
 import Balance from "./Components/Balance"
+import background from "../src/assets/moneyplantflip.jpeg";
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
   return (
     <Router>
       <NavBar/>
-        <UserContext.Provider value={{users:[{name:'tracy', email:'fake@me.com', password:'secret', balance: 100}]}}>
+        <UserContext.Provider value={{users:[{name:'BossBitch', email:'truss@brunn.com', password:'getsome', balance: 100}]}}>
         <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="home" element={<Home />} />

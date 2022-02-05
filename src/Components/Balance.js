@@ -9,11 +9,11 @@ function Balance(){
 
   return (
     <Card
-      bgcolor="primary"
+      bgcolor="success"
       txtcolor="white"
       header="Balance"
       title="Your current balance is:"
-      text="$100.00"
+      text={ctx.users[0].balance}
       body={(<img src="../bank.png" className="img-fluid" alt="Responsive"/>)}
      />
   );

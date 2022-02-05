@@ -53,12 +53,12 @@ function CreateAccount() {
 
   return (
     <Card
-      bgcolor="primary"
+      bgcolor="success"
       txtcolor="white"
       header="Create Account"
       status={status} // something we will pass based on the actions that are taken
       title="Create a New Account Here"
-      text=" "
+      text="$100 instantly credited to your new account upon approval!"
       // below for the body we are using a ternary expression -- depending on the value of show (which is initialized above to true), we will show one form or the other
       body={show ? ( 
         <>

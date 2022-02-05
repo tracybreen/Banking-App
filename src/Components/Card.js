@@ -8,6 +8,7 @@ function Card(props) {
     return 'card mb-3 ' + bg + txt;
   }
   return (
+    <div className="container">
     <div className={classes()} style={{maxWidth: "18rem"}}>
     {/* we will write the classes component shortly*/}
         <div className="card-header">{props.header}</div>
@@ -19,6 +20,7 @@ function Card(props) {
           {props.body}
           {props.status && (<div id="createStatus">{props.status}</div>)}
         </div>
+    </div>
     </div>
   );
 }

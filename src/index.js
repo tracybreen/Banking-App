@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.css"
+import background from "../src/assets/moneyplantflip.jpeg";
 // import UserContext from "./Components/Context"
 //import { useInRouterContext } from 'react-router';
 

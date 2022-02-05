@@ -6,14 +6,16 @@ function Home() {
   const ctx = React.useContext(UserContext);
   console.log(ctx);
   return (
+    <div className="money-plant">
     <Card
-      bgcolor="primary"
+      bgcolor="success"
       txtcolor="white"
       header="BadBank Landing Page"
       title="Welcome to the Bank"
       text="Banky bank bank stuff."
       body={(<img src="../bank.png" className="img-fluid" alt="Responsive"/>)}
      />
+     </div>
   );
 }
 

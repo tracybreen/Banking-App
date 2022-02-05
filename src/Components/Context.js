@@ -5,6 +5,9 @@ import React from "react"
 // const Link        = ReactRouterDOM.Link;
 // const HashRouter  = ReactRouterDOM.HashRouter;
 
-const UserContext = React.createContext();
+const UserContext = React.createContext(null);
+{/* <UserContext.Provider value={{users:['peter']}}>
+  
+</UserContext.Provider> */}
 
 export { UserContext }

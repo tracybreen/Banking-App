@@ -7,7 +7,7 @@ function Withdraw(){
   console.log(ctx);
   return (
     <Card
-      bgcolor="primary"
+      bgcolor="success"
       txtcolor="white"
       header="Withdraw"
       title="Enter Withdrawal Amount:"

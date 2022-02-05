@@ -8,7 +8,7 @@ function AllData() {
 
   return (
     <Card
-      bgcolor="primary"
+      bgcolor="success"
       txtcolor="white"
       header="All Data"
       title="Account Data:"

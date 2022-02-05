@@ -8,7 +8,7 @@ function Login() {
 
   return (
     <Card
-      bgcolor="primary"
+      bgcolor="success"
       txtcolor="white"
       header="Login"
       title="Your Account Login:"
